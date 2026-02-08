@@ -42,7 +42,7 @@ while True:
 		time.sleep(1)
 		os.system("clear")
 		os.system("pyfiglet --color=RED MineStresserC2")
-		print(Fore.BLUE + f"Running MCBot: {player_4_ip_} {player_4_port}")
+		print(Fore.BLUE + f"Running MCBot: {player_4_ip} {player_4_port}")
 		os.system(f"python mcbot.py {player_3_ip} {player_3_port} {player_3_bots}")
 		
 	if player == '1':
